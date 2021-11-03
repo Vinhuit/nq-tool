@@ -25,8 +25,8 @@ rm -rf dist && mkdir dist
 pkg -t node10-linux --options max_old_space_size=4096 -o nq-miner index.js
 
 cp nq-miner dist/nq-miner
-cp build/Release/nimiq_miner_cuda.node dist/
-cp build/Release/nimiq_miner_opencl.node dist/
+cp build/Release/nimiq_cuda.node dist/
+cp build/Release/nimiq_opencl.node dist/
 cp node_modules/node-lmdb/build/Release/node-lmdb.node dist/
 cp node_modules/@nimiq/core/build/Release/nimiq_node.node dist/
 cp README.md dist
@@ -34,8 +34,8 @@ cp start_gpu.sh dist
 
 rm -rf ${OUTDIR_SMOS} && mkdir ${OUTDIR_SMOS}/
 mv nq-miner ${OUTDIR_SMOS}/miner
-cp build/Release/nimiq_miner_cuda.node ${OUTDIR_SMOS}/
-cp build/Release/nimiq_miner_opencl.node ${OUTDIR_SMOS}/
+cp build/Release/nimiq_cuda.node ${OUTDIR_SMOS}/
+cp build/Release/nimiq_opencl.node ${OUTDIR_SMOS}/
 cp node_modules/node-lmdb/build/Release/node-lmdb.node ${OUTDIR_SMOS}/
 cp node_modules/@nimiq/core/build/Release/nimiq_node.node ${OUTDIR_SMOS}/
 cp README.md ${OUTDIR_SMOS}/
