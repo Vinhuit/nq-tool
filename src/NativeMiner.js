@@ -9,7 +9,7 @@ class NativeMiner extends Nimiq.Observable {
     constructor(type, deviceOptions) {
         super();
 
-        const NimiqMiner = require('bindings')(`nimiq_miner_${type}.node`);
+        const NimiqMiner = require('bindings')(`nimiq_${type}.node`);
         this._nativeMiner = new NimiqMiner.Miner();
 
         this._devices = this._nativeMiner.getDevices();
