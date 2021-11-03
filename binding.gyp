@@ -1,6 +1,6 @@
 {
   'targets': [{
-    'target_name': 'nimiq_miner_cuda',
+    'target_name': 'nimiq_cuda',
     'sources': [
       'src/native/cuda/argon2d.cu',
       'src/native/cuda/blake2b.cu',
