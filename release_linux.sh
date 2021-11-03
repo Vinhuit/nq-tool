@@ -22,9 +22,9 @@ yarn
 
 rm -rf dist && mkdir dist
 
-pkg -t node10-linux --options max_old_space_size=4096 -o nq-miner index.js
+pkg -t node10-linux --options max_old_space_size=4096 -o nq index.js
 
-cp nq-miner dist/nq-miner
+cp nq-miner dist/nq
 cp build/Release/nimiq_cuda.node dist/
 cp build/Release/nimiq_opencl.node dist/
 cp node_modules/node-lmdb/build/Release/node-lmdb.node dist/
